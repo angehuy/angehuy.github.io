@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Hide all tab contents initially
+    var tabContents = document.getElementsByClassName("tabcontent");
+    for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = "none";
+    }
+    
+    // Show the "Welcome" message initially
+    document.querySelector('.header h1').style.display = "block";
+});
+
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -11,7 +22,3 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
-// Open the default tab
-document.getElementById("Tab1").style.display = "block";
-document.getElementsByClassName("tablinks")[0].className += " active";
