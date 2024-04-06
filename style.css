@@ -1,1 +1,7 @@
-
+table.PerformanceTable {
+    table-layout: fixed;
+    width: 10000px;
+}
+    table.PerformanceTable td.PerformanceCell {
+        width: 75px;
+    }
