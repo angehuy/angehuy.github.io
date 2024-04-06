@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device=width, initial-scale=1.0"
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
 <style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-  
-  /* Clearfix (clear floats) */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .row .column img {
-    width: 200px;
-    height: 500px;
-    object-fit: cover;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  p {
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row .column img {
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* Set a maximum height for the images */
+  object-fit: cover;
+}
+
+p {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 20px;
@@ -42,13 +42,13 @@ footer {
   margin-left: 20px; /* Adjust as needed */
   margin-right: 20px; /* Adjust as needed */
 }
-  </style>
+</style>
 </head>
 <body>
 
 <header>
 <a href="index.html">
-<img src ="logo.png" width =250 height="90" alt="angehuy" title="angehuy">
+<img src="img/logo.png" width="250" height="90" alt="angehuy" title="angehuy">
 </a>
 </header>
 
@@ -68,27 +68,26 @@ footer {
 
 <h2>About me</h2>
 
-
 <div class="row">
   
     <div class="column">
-      <img src="me_staring2.jpeg" style="width:100%">
+      <img src="img/me_staring2.jpeg" style="width:100%">
     </div>
     <div class="column">
-      <img src="me_staring.jpeg" style="width:100%">
+      <img src="img/me_staring.jpeg" style="width:100%">
     </div>
     <div class="column">
-      <img src="z.png" style="width:100%">
+      <img src="img/z.png" style="width:100%">
     </div>
   </div>
 
 <p>
-Hi, my name is Angela Huynh! I'm currently studying biology and bioinformatics at Georgia Tech. In my free time, <br>
+Hi, my name is Angela Huynh! I'm currently study biology and bioinformatics at Georgia Tech. In my free time, <br>
 I devour and write poetry. For me, it is a  vessel of recollection and transformation. My work mainly touches <br>
 on Vietnamese identity and heritage. <br>
 <br>
-On this corner of the internet, I highlight my published works. Please don't hesitate to reach <br>
-out to talk about poetry and more.
+On this corner of the internet, I highlight select poetry and photos (for fun). Please don't hesistate to reach <br>
+out to talk about all things related to poetry and more!
 </p>
 
 
